@@ -1,5 +1,6 @@
+import clsx from 'clsx';
 import s from './Container.module.scss';
 
-export const Container = ({ children }) => {
-  return <div className={s.container}>{children}</div>;
+export const Container = ({ children, className }) => {
+  return <div className={clsx(s.container, className)}>{children}</div>;
 };
