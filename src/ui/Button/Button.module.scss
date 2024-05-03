@@ -1,12 +1,13 @@
 .button {
   border-radius: 15px;
+  font-family: Poppins;
+  font-size: 18px;
   &_fill {
     color: #fff;
     background: #6c5fbc;
   }
   &_empty {
     color: #6c5fbc;
-    background: #f9f9f9;
   }
   &_border {
     border: 1px solid #6c5fbc;

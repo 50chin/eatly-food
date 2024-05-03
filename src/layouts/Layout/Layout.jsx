@@ -1,0 +1,13 @@
+import { Footer } from "../../components/Footer/Footer";
+import { Header } from "../../components/Header/Header";
+import s from "./Layout.module.scss";
+
+export const Layout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};

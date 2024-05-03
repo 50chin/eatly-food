@@ -1,1 +1,36 @@
-.PurchasesCards {}
+.card {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+  width: 345px;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 17px;
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 15px;
+  align-items: center;
+  line-height: 140%;
+  color: #323142;
+
+  &__name {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  &__status {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__time {
+    align-self: flex-end;
+    color: #acadb9;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

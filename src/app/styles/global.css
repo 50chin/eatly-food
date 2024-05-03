@@ -5,10 +5,14 @@
   font-family: Poppins;
 }
 
-ul,
+body {
+  background: #f9f9f9;
+}
+
+/* ul,
 ol {
   list-style: none;
-}
+} */
 
 a {
   color: inherit;
