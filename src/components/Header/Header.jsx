@@ -2,6 +2,7 @@ import s from "./Header.module.scss";
 import { Container } from "../../layouts/Container/Container";
 import img from "./img/Logo.svg";
 import { Button } from "../../ui/Button/Button";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -33,11 +34,13 @@ export const Header = () => {
                 </ul>
               </nav>
               <div className={s.Header__right}>
-              <Button>Login</Button>
-              <Button variant='fill' size="small">Sign up</Button>
+                <Button>Login</Button>
+                <Button variant="fill" size="small">
+                  <Link to={"/signup"}>Sign up</Link>
+                </Button>
               </div>
             </div>
-            <hr className={s.Header__hr}/>
+            <hr className={s.Header__hr} />
           </>
         }
       </Container>
