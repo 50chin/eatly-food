@@ -6,12 +6,11 @@
   &__title {
     margin-top: 18px;
     color: #201f1f;
-    font-family: "Poppins", sans-serif;
     font-size: 75px;
     font-weight: 600;
     line-height: 120%;
     letter-spacing: -3px;
-    max-width: 567px;
+    width: 567px;
   }
   &__span {
     color: #5c4eae;
@@ -45,7 +44,6 @@
     gap: 20px;
     &Title {
       color: rgba(32, 31, 31, 0.2);
-      font-family: "Poppins", sans-serif;
       font-size: 15px;
       font-style: normal;
       font-weight: 600;
@@ -65,8 +63,8 @@
   }
   &__stars {
     margin-top: 11px;
-    width: 96px;
-    height: 15px;
+    max-width: 96px;
+    max-height: 15px;
   }
   &__downloads {
     margin-top: 7px;
@@ -102,16 +100,12 @@
       }
       &__title {
         color: #323142;
-        // font-feature-settings: "clig" off, "liga" off;
-        font-family: "Poppins", sans-serif;
         font-size: 15px;
         font-weight: 600;
         line-height: 140%;
       }
       &__descr {
         color: #323142;
-        // font-feature-settings: 'clig' off, 'liga' off;
-        font-family: "Poppins", sans-serif;
         font-size: 10px;
         font-weight: 500;
         line-height: 140%;
@@ -124,16 +118,9 @@
         right: 16px;
         bottom: 10px;
         color: #acadb9;
-        // font-feature-settings: "clig" off, "liga" off;
-        font-family: "Poppins", sans-serif;
         font-size: 10px;
         font-weight: 500;
         line-height: 140%;
-      }
-
-      img {
-        width: 73px;
-        height: 81px;
       }
     }
   }
@@ -163,6 +150,32 @@
     border: 0.3px solid #edf2f7;
     background: #fff;
     box-shadow: 14px 19px 37px 0px rgba(26, 32, 44, 0.15);
+    &__money {
+      top: 65px;
+      right: 10px;
+      position: absolute;
+      text-align: center;
+      padding: 2px 5.5px;
+      border-radius: 16px;
+      background: #6c5fbc;
+      flex-shrink: 0;
+      color: #fff;
+      font-size: 6px;
+      font-weight: 600;
+    }
+    &__hr {
+      z-index: 0;
+      position: absolute;
+      top: 88px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      hr {
+        opacity: 0.1;
+        width: 207px;
+        background: #6c5fbc;
+      }
+    }
   }
   &__times {
     justify-content: center;
@@ -172,7 +185,6 @@
     font-size: 7px;
     color: #828282;
     text-align: center;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     letter-spacing: 0.07px;
     &Span {
@@ -215,8 +227,10 @@
     position: absolute;
     left: -1px;
     top: 62px;
+    z-index: 1;
   }
   &__ellips {
+    z-index: 2;
     width: 9px;
     height: 9.5px;
     background: #c5bfed;
@@ -242,8 +256,8 @@
   }
   &__lines2 {
     position: absolute;
-    top: -67px;
-    right: -67px;
+    top: -35px;
+    right: -45px;
     img {
       width: 41px;
       height: 24px;

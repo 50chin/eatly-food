@@ -62,6 +62,12 @@ export const Hero = () => {
               </div>
               <img className={s.hero__vector} src={vector} alt="vector" />
               <div className={s.hero__ellips}></div>
+              <p className={s.hero__graph__money}>$409</p>
+              <div className={s.hero__graph__hr}>
+                <hr />
+                <hr />
+                <hr />
+              </div>
               <div className={s.hero__dimensional}>
                 <span className={s.hero__dimensionalSpan}>
                   <p>2D</p>
