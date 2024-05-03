@@ -5,7 +5,6 @@ import { Layout } from '../../layouts/Layout/Layout';
 import { Hero } from '../../components/Hero/Hero';
 import { Purchases } from '../../layouts/Purchases/Purchases';
 
-
 export const Home = () => {
   return (
     <>

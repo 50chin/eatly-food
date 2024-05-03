@@ -1,0 +1,1 @@
+export {ArticleDishes} from './ArticleDishes'
