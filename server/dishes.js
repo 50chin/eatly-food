@@ -1,5 +1,6 @@
 const dishes = [
   {
+    id: 1,
     name: "Spicy Dragon Noodles",
     duration: "30",
     rating: 4.7,
@@ -10,6 +11,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/SpicyDragonNoodles.webp",
   },
   {
+    id: 2,
     name: "Golden Turmeric Rice",
     duration: "25",
     rating: 4.5,
@@ -20,6 +22,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/GoldenTurmericRice.webp",
   },
   {
+    id: 3,
     name: "Classic Pepperoni Pizza",
     duration: "20",
     rating: 4.8,
@@ -30,6 +33,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/ClassicPepperoniPizza.webp",
   },
   {
+    id: 4,
     name: "Veggie Pizza",
     duration: "15",
     rating: 4.2,
@@ -40,6 +44,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/VeggiePizza.webp",
   },
   {
+    id: 5,
     name: "Chocolate Donut",
     duration: "10",
     rating: 4.9,
@@ -50,6 +55,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/ChocolateDonut.webp",
   },
   {
+    id: 6,
     name: "Glazed Donut",
     duration: "12",
     rating: 4.7,
@@ -60,6 +66,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/GlazedDonut.webp",
   },
   {
+    id: 7,
     name: "Ice Cream Sundae",
     duration: "5",
     rating: 4.5,
@@ -70,6 +77,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/IceCreamSundae.webp",
   },
   {
+    id: 8,
     name: "Frozen Yogurt",
     duration: "7",
     rating: 4.0,
@@ -81,6 +89,7 @@ const dishes = [
   },
 
   {
+    id: 9,
     name: "Mango Sticky Rice",
     duration: "20",
     rating: 4.9,
@@ -91,6 +100,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/MangoStickyRice.webp",
   },
   {
+    id: 10,
     name: "Teriyaki Chicken",
     duration: "25",
     rating: 4.8,
@@ -101,6 +111,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/TeriyakiChicken.webp",
   },
   {
+    id: 11,
     name: "BBQ Chicken Pizza",
     duration: "22",
     rating: 4.7,
@@ -111,6 +122,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/BBQChickenPizza.webp",
   },
   {
+    id: 12,
     name: "Seafood Pizza",
     duration: "24",
     rating: 4.5,
@@ -121,6 +133,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/SeafoodPizza.webp",
   },
   {
+    id: 13,
     name: "Caramel Donut",
     duration: "15",
     rating: 4.6,
@@ -131,6 +144,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/CaramelDonut.webp",
   },
   {
+    id: 14,
     name: "Matcha Donut",
     duration: "18",
     rating: 4.4,
@@ -141,6 +155,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/MatchaDonut.webp",
   },
   {
+    id: 15,
     name: "Raspberry Sorbet",
     duration: "10",
     rating: 4.9,
@@ -151,6 +166,7 @@ const dishes = [
     image: "http://localhost:7777/images/dishes/RaspberrySorbet.webp",
   },
   {
+    id: 16,
     name: "Chocolate Ice Cream",
     duration: "8",
     rating: 5.0,
