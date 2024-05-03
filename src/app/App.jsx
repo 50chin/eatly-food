@@ -1,3 +1,4 @@
+
 import '../app/styles/style.css';
 import { Home } from '../pages/Home/Home';
 function App() {
