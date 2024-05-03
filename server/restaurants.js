@@ -6,6 +6,7 @@ const restaurants = [
     name: "KFC",
     type: "Healthy",
     duration: "20",
+    rating: '4.8',
     price: "12.99",
     image: "http://localhost:7777/images/restaurants/KFC.webp",
     dishes: [
@@ -23,6 +24,7 @@ const restaurants = [
     name: "Burger King",
     type: "Trending",
     duration: "15",
+    rating: '4.9',
     price: "11.99",
     image: "http://localhost:7777/images/restaurants/BurgerKing.webp",
     dishes: [
@@ -40,6 +42,7 @@ const restaurants = [
     name: "Вкусно и точка",
     type: "Healthy",
     duration: "10",
+    rating: '4.8',
     price: "2.99",
     image: "http://localhost:7777/images/restaurants/vkusochka.png",
     dishes: [
@@ -57,6 +60,7 @@ const restaurants = [
     name: "Шаурма дяди Ашота",
     type: "Healthy",
     duration: "1",
+    rating: '4.3',
     price: "109.99",
     image: "http://localhost:7777/images/restaurants/shaverma.png",
     dishes: [
