@@ -1,14 +1,13 @@
-import '../app/styles/global.css';
-import { Home } from '../pages/Home/Home';
-import { Restaurants } from './components/Restaurants/Restaurants';
-function App() {
+import "../app/styles/style.css";
+import { Home } from "../pages/Home/Home";
+import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
+import { Route, Routes } from "react-router-dom";
+
+export default function App() {
   return (
-    <>
-      <Home />
-      <Restaurants/>
-    </>
+    <Routes>
+      <Route element={<Home />} path={"/"}></Route>
+      <Route element={<SignUpPage />} path={"/signup"}></Route>
+    </Routes>
   );
 }
-// http://localhost:7777/restaraunts
-
-export default App;

@@ -1,0 +1,1 @@
+export {SignUpFooter} from './SignUpFooter'

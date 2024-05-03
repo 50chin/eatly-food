@@ -1,0 +1,50 @@
+.Header {
+  font-family: Poppins, sans-serif;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px 0 18px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__image {
+    margin-right: 11px;
+  }
+  &__logo {
+    width: 42px;
+    height: 42px;
+  }
+  &__title {
+    color: #6c5fbc;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  &__nav {
+    color: #606060;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    display: flex;
+  }
+  &__ul {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+    list-style: none;
+  }
+  &__left {
+  }
+  &__right{
+    display: flex;
+    gap: 18px;
+  }
+  &__hr {
+    background: #cbcbcb;
+  }
+}
