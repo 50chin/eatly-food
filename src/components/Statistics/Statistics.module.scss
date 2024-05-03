@@ -1,0 +1,38 @@
+.statistics {
+  background: #5c4eae;
+  background-image: url("../../assets/img/statistics/statistic-bg.jpg");
+  padding: 49px 0;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 942px;
+  margin: 0 auto;
+}
+.card__withborder {
+  border-right: solid 1px gray;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 66px;
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 43.2px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 10px;
+  }
+  &__desc {
+    color: #cbd5e1;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14.4px;
+    font-weight: 500;
+    line-height: 21.6px;
+    min-width: 208px;
+  }
+}

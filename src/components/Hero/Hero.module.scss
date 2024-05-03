@@ -25,7 +25,6 @@
     text-align: justify;
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 28px;
     width: 499px;
@@ -45,7 +44,6 @@
     &Title {
       color: rgba(32, 31, 31, 0.2);
       font-size: 15px;
-      font-style: normal;
       font-weight: 600;
       line-height: 120%;
       letter-spacing: 2px;
@@ -163,18 +161,18 @@
       font-size: 6px;
       font-weight: 600;
     }
+
     &__hr {
+      top: 85px;
       z-index: 0;
       position: absolute;
-      top: 88px;
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-      hr {
-        opacity: 0.1;
-        width: 207px;
-        background: #6c5fbc;
-      }
+      width: 207px;
+      border-top: 1px solid #6c5fbc;
+      border-bottom: 1px solid #6c5fbc;
+      opacity: 0.1;
+    }
+    hr {
+      margin: 25px 0;
     }
   }
   &__times {
@@ -244,10 +242,6 @@
     position: absolute;
     top: 130px;
     left: 220px;
-    img {
-      width: 101px;
-      height: 97px;
-    }
   }
   &__lines {
     position: absolute;
@@ -258,17 +252,14 @@
     position: absolute;
     top: -35px;
     right: -45px;
-    img {
-      width: 41px;
-      height: 24px;
+  }
+  &__buttons {
+    letter-spacing: 0.163px;
+    margin-top: 53px;
+    display: flex;
+    gap: 18px;
+    button {
+      padding: 18px 31px;
     }
   }
-}
-button {
-  margin-top: 53px;
-  width: 150px;
-  height: 59px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin-right: 20px;
 }

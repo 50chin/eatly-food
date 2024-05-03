@@ -7,6 +7,7 @@ import lines from "../../assets/icons/Hero/lines.svg";
 import lines2 from "../../assets/icons/Hero/lines2.svg";
 import vector from "../../assets/icons/Hero/vector.svg";
 import { Container } from "../../layouts/Container/Container";
+import { Button } from "../../ui/Button/Button";
 
 export const Hero = () => {
   return (
@@ -27,8 +28,14 @@ export const Hero = () => {
               disclaimer for more details and get paychecks up to two days
               early. Get a <span className={s.hero__spanSecond}>$20 bonus</span>
             </p>
-            <button></button>
-            <button></button>
+            <div className={s.hero__buttons}>
+              <Button variant="fill" size="small" border="true">
+                Get Started
+              </Button>
+              <Button variant="empty" size="small" border="true">
+                Go Pro
+              </Button>
+            </div>
             <div className={s.hero__application}>
               <img className={s.hero__logo} src={logoHero} alt="logo" />
               <img className={s.hero__stars} src={starsHero} alt="stars" />
@@ -54,7 +61,7 @@ export const Hero = () => {
             <div className={s.hero__graph}>
               <div className={s.hero__times}>
                 <span className={s.hero__timesSpan}>
-                  <p clas>Main</p>
+                  <p>Main</p>
                 </span>
                 <p>Weekly</p>
                 <p>Montly</p>
@@ -64,8 +71,6 @@ export const Hero = () => {
               <div className={s.hero__ellips}></div>
               <p className={s.hero__graph__money}>$409</p>
               <div className={s.hero__graph__hr}>
-                <hr />
-                <hr />
                 <hr />
               </div>
               <div className={s.hero__dimensional}>
