@@ -1,0 +1,55 @@
+.allcontent {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 383px;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.title {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 35.25px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -1.41px;
+  margin-bottom: 47px;
+}
+.links {
+  display: flex;
+  gap: 21px;
+  margin-bottom: 33px;
+}
+.or {
+  color: rgba(0, 90, 100, 0.35);
+  font-family: Poppins;
+  font-size: 20.011px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 23px;
+}
+.buttonForSignUp {
+  height: 75px;
+  border-radius: 14px;
+}
+.wrapperlogin {
+  color: #3e3e3e;
+  font-family: Poppins;
+  font-size: 18.9px;
+  font-weight: 400;
+  letter-spacing: 0.189px;
+}
+.login {
+  color: #6c5fbc;
+  font-family: Poppins;
+  font-size: 18.9px;
+  font-weight: 700;
+  letter-spacing: 0.189px;
+}
