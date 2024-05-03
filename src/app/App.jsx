@@ -1,3 +1,4 @@
+
 import "../app/styles/style.css";
 import { Home } from "../pages/Home/Home";
 import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
