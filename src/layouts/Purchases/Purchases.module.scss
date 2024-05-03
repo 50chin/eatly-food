@@ -1,0 +1,125 @@
+.purchases {
+  padding: 100px 0 135px;
+  &__container {
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 135px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    width: 569px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.198px;
+    text-transform: capitalize;
+
+    span {
+      color: #6c5fbc;
+    }
+  }
+  &__cards {
+    margin-top: 48px;
+  }
+  &__illustration {
+    padding: 37px 37px 45px;
+    width: 534px;
+    height: 466px;
+    border-radius: 25px;
+    border: 1.5px solid #edf2f7;
+    background: #fff;
+  }
+
+  &__illustrationTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__illustrationCards {
+    margin-top: 16px;
+  }
+
+  &__copy {
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 135%;
+  }
+
+  &__date {
+    appearance: none;
+    border: none;
+    color: #1a202c;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 12px;
+    background: #fafafa;
+    width: 175px;
+    height: 53px;
+    padding: 12px 18px;
+  }
+
+  &__card {
+    margin-top: 21px;
+    padding: 25px;
+    width: 458px;
+    height: 135px;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1.5px solid #edf2f7;
+
+    img {
+      padding: 12px;
+      border-radius: 50px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    gap: 19px;
+  }
+
+  &__text {
+    font-family: Manrope;
+    line-height: 150%;
+
+    :first-child {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    :nth-child(2) {
+      color: #a0aec0;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  &__wallet {
+    background: rgba(147, 109, 255, 0.1);
+  }
+
+  &__money {
+    background: rgba(34, 197, 94, 0.1);
+  }
+
+  &__result {
+    font-family: Manrope;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 150%;
+  }
+
+  &__line {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

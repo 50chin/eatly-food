@@ -1,5 +1,10 @@
-import s from './SignUp.module.scss'
+import { SignUpLeft } from "../SignUpLeft/SignUpLeft";
+import s from "./SignUp.module.scss";
 
-export const SignUp = () => {return <div>
-здесь будет страничка регистрации
-</div>}
+export const SignUp = () => {
+  return (
+    <>
+      <SignUpLeft></SignUpLeft>
+    </>
+  );
+};

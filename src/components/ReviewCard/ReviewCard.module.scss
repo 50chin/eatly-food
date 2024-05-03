@@ -1,0 +1,26 @@
+.review {
+  &__card {
+    padding: 38px 43px 0 43px;
+    width: 528px;
+    height: 239px;
+    flex-shrink: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 20px;
+  }
+  &__stars {
+    width: 138px;
+    height: 23px;
+    flex-shrink: 0;
+  }
+  &__text {
+    color: #969696;
+    text-align: justify;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}

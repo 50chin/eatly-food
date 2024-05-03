@@ -5,6 +5,10 @@
   font-family: Poppins;
 }
 
+body {
+  background: #f9f9f9;
+}
+
 /* ul,
 ol {
   list-style: none;
