@@ -1,0 +1,29 @@
+.customer {
+  margin-top: 116px;
+  &__title {
+    text-align: center;
+    color: #323142;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 25px;
+    span {
+      color: #6c5fbc;
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+  }
+  &__reviews {
+    margin-top: 40px;
+    display: flex;
+    &Scroll {
+      gap: 46px;
+      margin-top: 80px;
+      display: flex;
+      overflow-x: scroll;
+      scrollbar-width: thin;
+      scrollbar-color: #6c5fbc #b7b2d3;
+      scroll-behavior: smooth;
+    }
+  }
+}
