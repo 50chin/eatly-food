@@ -1,0 +1,74 @@
+.Footer {
+    font-family: Poppins, sans-serif;
+    background: #EAEAEA;
+&__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 96px 0 81px;
+}
+&__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+&__left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+&__image{
+    margin-right: 11px;
+}
+&__logo{
+    width: 42px;
+    height: 42px;
+}
+&__title{
+    color: #6C5FBC;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 130%; 
+}
+&__nav{
+    color: #999;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px; 
+    display: flex;
+}
+&__ul{
+    display: flex;
+    gap: 53px;
+    align-items:center;
+}
+&__left{
+    
+}
+&__hr{
+    opacity: 0.25;
+    background: #818181;
+    margin-top: 44px;
+}
+&__bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+}
+&__coopirate{
+    color: #999;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px; 
+}
+&__icons{
+    display: flex;
+    justify-content: space-between;
+    width: min(235px, 100%);
+}
+}
