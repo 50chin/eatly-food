@@ -1,5 +1,5 @@
-import { ReviewCard } from "../ReviewCard";
-import s from "./Customer.module.scss";
+import { ReviewCard } from '../ReviewCard';
+import s from './Customer.module.scss';
 
 export const Customer = () => {
   return (

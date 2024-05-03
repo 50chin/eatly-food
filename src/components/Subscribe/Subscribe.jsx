@@ -1,6 +1,6 @@
-import s from "./Subscribe.module.scss";
-import subscribeFood from "../../assets/img/Subscribe/subscribeFood.webp";
-import { Button } from "../../ui/Button/Button";
+import s from './Subscribe.module.scss';
+import subscribeFood from '../../assets/img/Subscribe/subscribeFood.webp';
+import { Button } from '../../ui/Button/Button';
 
 export const Subscribe = () => {
   return (
