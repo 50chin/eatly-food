@@ -2,6 +2,7 @@ const dishes = require("./dishes"); // Импортируйте массив б�
 
 const restaurants = [
   {
+    id: 1,
     name: "KFC",
     type: "Healthy",
     duration: "20",
@@ -18,6 +19,7 @@ const restaurants = [
     ],
   },
   {
+    id: 2,
     name: "Burger King",
     type: "Trending",
     duration: "15",
@@ -34,6 +36,7 @@ const restaurants = [
     ],
   },
   {
+    id: 3,
     name: "Вкусно и точка",
     type: "Healthy",
     duration: "10",
@@ -50,6 +53,7 @@ const restaurants = [
     ],
   },
   {
+    id: 4,
     name: "Шаурма дяди Ашота",
     type: "Healthy",
     duration: "1",
