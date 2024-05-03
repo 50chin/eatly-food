@@ -2,6 +2,9 @@ import s from "./MobileApp.module.scss";
 import { Container } from "../../layouts/Container/Container";
 import imgMobileScreen from "../../assets/img/mobileApp/mobile-screen.png";
 import imgLines from "../../assets/img/mobileApp/lines.png";
+import imgButton from "../../assets/img/mobileApp/buttonicon.svg";
+import imgLineCurv from "../../assets/img/mobileApp/line-curve.png";
+import { Button } from "../../ui/Button/Button";
 
 export const MobileApp = () => {
   return (
@@ -31,10 +34,17 @@ export const MobileApp = () => {
               </li>
             </ul>
             <div className={s.bottom}>
-
+              <Button variant="fill" size="small">
+                <div className={s.button}>
+                  <p>Download</p>
+                  <img src={imgButton}></img>
+                </div>
+              </Button>
+              <img src={imgLineCurv} className={s.imgbutton}></img>
             </div>
           </div>
         </div>
+        <hr className={s.hr}></hr>
       </Container>
     </section>
   );
