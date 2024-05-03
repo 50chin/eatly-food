@@ -3,7 +3,6 @@ import { Statistics } from "../../components/Statistics/Statistics";
 import s from "./Home.module.scss";
 import { Layout } from "../../layouts/Layout/Layout";
 import { Hero } from "../../components/Hero/Hero";
-import { Subscribe } from "../../components/Subscribe";
 
 export const Home = () => {
   return (
@@ -12,7 +11,6 @@ export const Home = () => {
         <Hero></Hero>
         <Statistics></Statistics>
         <MobileApp></MobileApp>
-        <Subscribe></Subscribe>
       </Layout>
     </>
   );
