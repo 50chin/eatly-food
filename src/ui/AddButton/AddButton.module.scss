@@ -1,0 +1,16 @@
+.btn {
+  width: 43px;
+  height: 43px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #323142;
+  font-size: 28px;
+  line-height: 1;
+  margin-left: auto;
+  &:hover {
+    background-color: #47464e;
+  }
+  &:active {
+    box-shadow: 50px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  }
+}
