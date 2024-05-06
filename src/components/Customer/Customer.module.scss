@@ -1,11 +1,11 @@
 .customer {
-  margin-top: 116px;
   &__title {
     text-align: center;
     color: #323142;
     font-size: 45px;
     font-weight: 600;
     line-height: 25px;
+    margin-bottom: 80px;
     span {
       color: #6c5fbc;
       font-size: 45px;
@@ -13,17 +13,31 @@
       line-height: 25px;
     }
   }
-  &__reviews {
-    margin-top: 40px;
+  &__review {
+    article {
+      box-shadow: 0px 0px 90px 0px rgba($color: #696874, $alpha: 0.2);
+    }
+    height: 346px;
     display: flex;
+    flex-direction: column;
+    article {
+      height: 100%;
+    }
+  }
+  &__reviews {
+    display: flex;
+    gap: 46px;
     &Scroll {
+      box-shadow: 0px 0px 20px 0px rgba($color: #696874, $alpha: 0.05);
+      article {
+        box-shadow: 0px 0px 90px 0px rgba($color: #696874, $alpha: 0.1);
+      }
+      margin-bottom: 10px;
       gap: 46px;
-      margin-top: 80px;
       display: flex;
       overflow-x: scroll;
       scrollbar-width: thin;
       scrollbar-color: #6c5fbc #b7b2d3;
-      scroll-behavior: smooth;
     }
   }
 }
