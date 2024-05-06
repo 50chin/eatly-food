@@ -1,0 +1,79 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 0.4fr);
+    justify-items: center;
+    grid-row-gap: 100px;
+    justify-content: center;
+    background: #F9F9F9;
+}
+
+
+.card {
+    width: 348px;
+    height: 440px;
+    box-shadow: 0px 3.905px 46.864px 0px rgba(197, 197, 197, 0.25);
+    border-radius: 24px;
+    padding: 20px 20px 0px 20px;
+}
+.cardUser {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin-top: 25px;
+}
+.cardUserData {
+    margin-left: 60px;
+}
+.cardName {
+    margin-top: 10px;
+}
+.section__title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #323142;
+    margin-bottom: 60px;
+}
+.span {
+    color: #6C5FBC;
+}
+.cartName {
+    color: #252525;
+    font-size: 21.14px;
+    font-weight: 600;
+    line-height: 25.18px;
+}
+.cartUserCreate {
+    color: #8D8D8D;
+    font-size: 11.771px;
+    font-weight: 400;
+}
+.cardUserCreate {
+    display: flex;
+    flex-direction: column;
+}
+.cartUser {
+    color: var(--Light-100, #000);
+    font-size: 17.021px;
+    font-weight: 500;
+    line-height: 26.099px
+}
+.cartData {
+    color: #B7B4B4;
+    font-size: 15.855px;
+}
+.card__scroll_right {
+    width: 55px;
+    font-size: 50px;
+}
+.card__scroll_left {
+    font-size: 50px;
+    width: 55px;
+    color:#8D8D8D;
+}
+.card__scrolls {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+}
