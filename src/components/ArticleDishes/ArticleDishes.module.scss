@@ -5,7 +5,7 @@
     border: 1px solid #F4F4F6;
     background:  #FFF;
     box-shadow: 7px 82px 41px 0px rgba(229, 229, 229, 0.70);
-    margin: 0 30px 0 0;
+    margin: 30px 0 0 0  ;
     cursor: pointer;
     font-family: Manrope, sans-serif;
     &:hover{
@@ -14,18 +14,24 @@
     }
     &__content{
         padding: 26px 17px 5px;
+        display: flex;
+        flex-direction: column;
     }
     &__images{
-        width: min(202px, 100%);
-        height: min(202px, 100%);
+        width: 184px;
+        height: 202px;
         position: relative;
+        margin-bottom: 5px;
     }
     &__img{
-        object-fit: cover;
+        object-fit: contain;
+        width: min(184px, 100%);
+        height: min(202px, 100%);
+        border-radius: 50px;
     }
     &__heart{
         position: absolute;
-        inset-inline-end: -6px;
+        inset-inline-end: -15px;
         inset-block-start: 5px;
     }
     &__title{
@@ -52,7 +58,7 @@
         display: flex;
         flex-direction: row;
         align-items:center;
-        margin-top: 13px;
+        margin-top: auto;
     }
     &__ceil{
         color: #323142;
@@ -75,5 +81,18 @@
         &:active{
             box-shadow: 50px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
         }
+        &_decr{
+            color: #323142;
+            background-color: #fff;
+            border: 1px inset #323142;
+            margin-left: 8px;
+        }
+    }
+    &__count{
+        color:  #323142;
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        line-height: 140%; /* 24.619px */
+        padding: 5px;
     }
 }
