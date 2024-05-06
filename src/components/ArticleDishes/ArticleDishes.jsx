@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import s from "./ArticleDishes.module.scss";
+import { AddButton } from '../../ui/AddButton/AddButton';
+import { FavoritesButton } from '../../ui/FavoritesButton';
+import s from './ArticleDishes.module.scss';
+
 import img from './img/FoodImage.png';
 import heart from './img/Heart.svg';
 import star from './img/Star.svg';
 import { Tag } from "../Tag/Tag";
+
 
 export const ArticleDishes = ({type, image, names, duration, rating, dollars, cents}) => {
   const [count, setCount] = useState(0); 
@@ -24,8 +28,9 @@ export const ArticleDishes = ({type, image, names, duration, rating, dollars, ce
     <article className={s.card}>
       <div className={s.card__content}>
         <div className={s.card__images}>
-            <img src={image} alt="img" className={s.card__img}/>
-            <input type="image" src={heart} className={s.card__heart}/>
+//             <input type="image" src={heart} className={s.card__heart}/>
+          <img src={img} alt="img" className={s.card__img} />
+          <FavoritesButton />
         </div>
         <Tag>{firstBig(type)}</Tag>
         <p className={s.card__title}>{names}</p>
@@ -42,9 +47,10 @@ export const ArticleDishes = ({type, image, names, duration, rating, dollars, ce
               <div>
                 <button className={`${s.card__btn} ${s.card__btn_decr}`} onClick={decrement}>-</button>
                 <span className={s.card__count}>{count}</span>
-                <button className={s.card__btn} onClick={increment}>+</button>
+//                 <button className={s.card__btn} onClick={increment}>+</button>
               </div>
             )}
+          <AddButton />
         </div>
       </div>
     </article>
