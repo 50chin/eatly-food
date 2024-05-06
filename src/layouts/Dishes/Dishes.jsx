@@ -16,7 +16,6 @@ export const Dishes = () => {
       // Сортировка данных по убыванию рейтинга
       const sortData = jsonData.sort((a, b) => b.rating - a.rating);
       setData(sortData);
-      console.log(sortData);
     };
 
     fetchData();
