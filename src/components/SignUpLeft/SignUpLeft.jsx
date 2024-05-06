@@ -5,10 +5,10 @@ import { SignUpFooter } from "../SignUpFooter/SignUpFooter";
 
 export const SignUpLeft = () => {
   return (
-    <>
+    <div className={s.left}>
       <SignUpHeader />
       <SignUpForm />
       <SignUpFooter />
-    </>
+    </div>
   );
 };
