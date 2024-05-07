@@ -1,11 +1,14 @@
 .section {
+  &__container {
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 85px;
+  }
   &__title {
     color: #323142;
-    font-feature-settings: 'clig' off, 'liga' off;
     font-size: 45px;
     font-style: normal;
     font-weight: 600;
-    line-height: 25.558px; /* 56.797% */
+    line-height: 25px;
     &_purple {
       color: #6c5fbc;
     }
@@ -16,30 +19,22 @@
     margin-top: 85px;
     flex-wrap: wrap;
   }
-  &__restaurants{
+  &__restaurants {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    padding: 70px 0 0;
   }
-  &__link{
-    color: #ACADB9;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Poppins, sans-serif;
+  &__link {
+    color: #acadb9;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 45.184px; /* 225.921% */
-    letter-spacing: -0.1px;
+    line-height: 45px;
   }
-  &__subcontent{
+  &__subContent {
     width: 100%;
     text-align: right;
-    margin-top: 65px;
-  }
-  &__line{
-    width: 100%;
-    opacity: 50%;
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }

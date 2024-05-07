@@ -1,15 +1,15 @@
-import s from "./MobileApp.module.scss";
-import { Container } from "../../layouts/Container/Container";
-import imgMobileScreen from "../../assets/img/mobileApp/mobile-screen.png";
-import imgLines from "../../assets/img/mobileApp/lines.png";
-import imgButton from "../../assets/img/mobileApp/buttonicon.svg";
-import imgLineCurv from "../../assets/img/mobileApp/line-curve.png";
-import { Button } from "../../ui/Button/Button";
+import s from './MobileApp.module.scss';
+import { Container } from '../../layouts/Container/Container';
+import imgMobileScreen from '../../assets/img/mobileApp/mobile-screen.png';
+import imgLines from '../../assets/img/mobileApp/lines.png';
+import imgButton from '../../assets/img/mobileApp/buttonicon.svg';
+import imgLineCurv from '../../assets/img/mobileApp/line-curve.png';
+import { Button } from '../../ui/Button/Button';
 
 export const MobileApp = () => {
   return (
     <section className={s.section__MobileApp}>
-      <Container>
+      <Container className={s.container}>
         <div className={s.allcontent}>
           <div className={s.leftcontent}>
             <img src={imgMobileScreen}></img>
@@ -17,10 +17,10 @@ export const MobileApp = () => {
           </div>
           <div className={s.rightcontent}>
             <h2 className={s.title}>
-              Premium{" "}
+              Premium
               <span className={s.title_span}>
                 Quality<br></br>
-              </span>{" "}
+              </span>
               For Your Health
             </h2>
             <ul className={s.list}>
@@ -44,7 +44,6 @@ export const MobileApp = () => {
             </div>
           </div>
         </div>
-        <hr className={s.hr}></hr>
       </Container>
     </section>
   );

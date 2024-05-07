@@ -3,15 +3,14 @@ import { AddButton } from '../../ui/AddButton/AddButton';
 import { FavoritesButton } from '../../ui/FavoritesButton';
 import s from './ArticleDishes.module.scss';
 
-import img from './img/FoodImage.png';
-import heart from './img/Heart.svg';
 import star from './img/Star.svg';
 import { Tag } from '../Tag/Tag';
+import { ProductCounterButton } from '../../ui/ProductCounterButton/ProductCounterButton';
 
 export const ArticleDishes = ({
   type,
   image,
-  names,
+  name,
   duration,
   rating,
   dollars,
@@ -36,10 +35,10 @@ export const ArticleDishes = ({
       <div className={s.card__content}>
         <div className={s.card__images}>
           <img src={image} alt="img" className={s.card__img} />
-          <FavoritesButton />
+          <FavoritesButton className={s.card__heart} />
         </div>
         <Tag>{firstBig(type)}</Tag>
-        <p className={s.card__title}>{names}</p>
+        <p className={s.card__title}>{name}</p>
         <div className={s.card__estimation}>
           <p className={s.card__p}>{duration}min •</p>
           <img src={star} alt="img" className={s.card__star} />
@@ -50,24 +49,15 @@ export const ArticleDishes = ({
             <span className={s.card__ceil}>${dollars}</span>.{cents}
           </p>
           {count === 0 ? (
-            <button className={s.card__btn} onClick={increment}>
-              +
-            </button>
+            <AddButton onClick={increment} className={s.card__btn} />
           ) : (
-            <div>
-              <button
-                className={`${s.card__btn} ${s.card__btn_decr}`}
-                onClick={decrement}
-              >
-                -
-              </button>
-              <span className={s.card__count}>{count}</span>
-              <button className={s.card__btn} onClick={increment}>
-                +
-              </button>
-            </div>
+            <ProductCounterButton
+              className={s.card__btn}
+              count={count}
+              decrement={() => decrement()}
+              increment={() => increment()}
+            />
           )}
-          <AddButton />
         </div>
       </div>
     </article>

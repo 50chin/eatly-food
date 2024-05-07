@@ -4,7 +4,7 @@ import { Button } from '../../ui/Button/Button';
 
 export const Subscribe = () => {
   return (
-    <div className={s.subscribe}>
+    <section className={s.subscribe}>
       <p className={s.subscribe__sale}>GET 50%</p>
       <form action="#">
         <input
@@ -14,11 +14,11 @@ export const Subscribe = () => {
           id="subscribe"
           placeholder=" Enter Your Email Address"
         />
-        <Button variant="fill" size="small" border="true">
+        <Button variant="fill" size="small">
           SUBSCRIBE
         </Button>
       </form>
       <img className={s.subscribe__food} src={subscribeFood} alt="food" />
-    </div>
+    </section>
   );
 };
