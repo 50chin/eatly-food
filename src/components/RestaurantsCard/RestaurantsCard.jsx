@@ -1,6 +1,7 @@
 import { Tag } from '../Tag/Tag';
 import s from './RestaurantsCard.module.scss';
 import star from '../../assets/icons/Hero/star.svg';
+import { BookMarkButton } from '../../ui/BookMarkButton/BookMarkButton';
 
 export const RestaurantsCard = ({ image, type, name, duration, rating }) => {
   return (
@@ -22,7 +23,7 @@ export const RestaurantsCard = ({ image, type, name, duration, rating }) => {
                 <p className={s.card__text}>{rating}</p>
               </div>
             </div>
-            {/* Место под кнопку */}
+            <BookMarkButton />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import inst from './img/inst.png';
 import inn from "./img/in.png";
 import facebook from './img/facebook.png';
 import twitter from './img/twitter.png'
+import { Link } from "react-router-dom";
 
 
 export const Footer = () => {
@@ -24,12 +25,13 @@ export const Footer = () => {
                 </div>
                 <nav className={s.Footer__nav}>
                     <ul className={s.Footer__ul}>
-                    <li>
+                      <Link to={'/'}><li>
                         <a href="">Menu</a>
-                    </li>
-                    <li>
+                    </li></Link>
+                    <Link to={'/blog'}><li>
                         <a href="">Blog</a>
-                    </li>
+                    </li></Link>
+                    
                     <li>
                         <a href="">Pricing</a>
                     </li>

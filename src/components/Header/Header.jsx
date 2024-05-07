@@ -19,12 +19,13 @@ export const Header = () => {
               </div>
               <nav className={s.Header__nav}>
                 <ul className={s.Header__ul}>
-                  <li>
+                  <Link to={"/"}><li>
                     <a href="">Menu</a>
                   </li>
-                  <li>
-                    <a href="">Blog</a>
-                  </li>
+                  </Link>
+                  <Link to={"/blog"}><li>
+                    <a href="blog">Blog</a>
+                  </li></Link>
                   <li>
                     <a href="">Pricing</a>
                   </li>
