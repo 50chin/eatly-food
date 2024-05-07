@@ -3,8 +3,6 @@ import { AddButton } from '../../ui/AddButton/AddButton';
 import { FavoritesButton } from '../../ui/FavoritesButton';
 import s from './ArticleDishes.module.scss';
 
-import img from './img/FoodImage.png';
-import heart from './img/Heart.svg';
 import star from './img/Star.svg';
 import { Tag } from '../Tag/Tag';
 
@@ -36,7 +34,7 @@ export const ArticleDishes = ({
       <div className={s.card__content}>
         <div className={s.card__images}>
           <img src={image} alt="img" className={s.card__img} />
-          <FavoritesButton />
+          <FavoritesButton className={s.card__heart} />
         </div>
         <Tag>{firstBig(type)}</Tag>
         <p className={s.card__title}>{names}</p>
@@ -50,9 +48,7 @@ export const ArticleDishes = ({
             <span className={s.card__ceil}>${dollars}</span>.{cents}
           </p>
           {count === 0 ? (
-            <button className={s.card__btn} onClick={increment}>
-              +
-            </button>
+            <AddButton onClick={increment} className={s.card__btn} />
           ) : (
             <div>
               <button
@@ -67,7 +63,6 @@ export const ArticleDishes = ({
               </button>
             </div>
           )}
-          <AddButton />
         </div>
       </div>
     </article>

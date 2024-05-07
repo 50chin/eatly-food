@@ -24,11 +24,11 @@ export const Dishes = () => {
   const formatPrice = (price) => {
     const [dollars, cents] = price.split('.');
     return { dollars, cents };
-  }
+  };
 
   const toggleViewAll = () => {
-    setViewAll(!viewAll); 
-  }
+    setViewAll(!viewAll);
+  };
 
   return (
     <section className={s.Dishes}>
@@ -39,27 +39,26 @@ export const Dishes = () => {
               Our Top <span className={s.Dishes__span}>Dishes</span>
             </h2>
             <a href="##!" className={s.Dishes__link} onClick={toggleViewAll}>
-              View All  <img src={vector} alt="img" />
+              View All <img src={vector} alt="img" />
             </a>
           </div>
           <div className={s.Dishes__cards}>
             {data.map((el, i) => {
               const { dollars, cents } = formatPrice(el.price);
-              if (viewAll || i < 5){
+              if (viewAll || i < 5) {
                 return (
-                <ArticleDishes
-                  key={el.id}
-                  image={el.image}
-                  type={el.type}
-                  name={el.names}
-                  duration={el.duration}
-                  rating={el.rating}
-                  dollars={dollars}
-                  cents={cents}
-                />
-              );
+                  <ArticleDishes
+                    key={el.id}
+                    image={el.image}
+                    type={el.type}
+                    name={el.names}
+                    duration={el.duration}
+                    rating={el.rating}
+                    dollars={dollars}
+                    cents={cents}
+                  />
+                );
               }
-              
             })}
           </div>
         </div>
