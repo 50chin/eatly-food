@@ -5,6 +5,7 @@ import s from './ArticleDishes.module.scss';
 
 import star from './img/Star.svg';
 import { Tag } from '../Tag/Tag';
+import { ProductCounterButton } from '../../ui/ProductCounterButton/ProductCounterButton';
 
 export const ArticleDishes = ({
   type,
@@ -50,18 +51,12 @@ export const ArticleDishes = ({
           {count === 0 ? (
             <AddButton onClick={increment} className={s.card__btn} />
           ) : (
-            <div>
-              <button
-                className={`${s.card__btn} ${s.card__btn_decr}`}
-                onClick={decrement}
-              >
-                -
-              </button>
-              <span className={s.card__count}>{count}</span>
-              <button className={s.card__btn} onClick={increment}>
-                +
-              </button>
-            </div>
+            <ProductCounterButton
+              className={s.card__btn}
+              count={count}
+              decrement={() => decrement()}
+              increment={() => increment()}
+            />
           )}
         </div>
       </div>

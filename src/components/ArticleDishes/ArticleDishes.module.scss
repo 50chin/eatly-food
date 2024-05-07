@@ -5,7 +5,7 @@
   border: 1px solid #f4f4f6;
   background: #fff;
   box-shadow: 7px 82px 41px 0px rgba(229, 229, 229, 0.7);
-  margin: 30px 0 0 0;
+  margin: 30px 0 0;
   cursor: pointer;
   font-family: Manrope, sans-serif;
   &:hover {
@@ -66,20 +66,12 @@
     line-height: 40px;
   }
   &__btn {
-    width: 43px;
-    height: 43px;
-    color: #fff;
     border-radius: 15px;
-    background-color: #323142;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1;
     margin-left: auto;
-    &:hover {
-      background-color: #47464e;
-    }
-    &:active {
-      box-shadow: 50px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
-    }
+    background-color: #47464e;
+
     &_decr {
       color: #323142;
       background-color: #fff;
@@ -90,7 +82,7 @@
   &__count {
     color: #323142;
     font-size: 17px;
-    line-height: 140%; /* 24.619px */
+    line-height: 140%;
     padding: 5px;
   }
 }
