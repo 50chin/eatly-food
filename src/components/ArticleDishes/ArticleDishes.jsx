@@ -10,7 +10,7 @@ import { ProductCounterButton } from '../../ui/ProductCounterButton/ProductCount
 export const ArticleDishes = ({
   type,
   image,
-  names,
+  name,
   duration,
   rating,
   dollars,
@@ -38,7 +38,7 @@ export const ArticleDishes = ({
           <FavoritesButton className={s.card__heart} />
         </div>
         <Tag>{firstBig(type)}</Tag>
-        <p className={s.card__title}>{names}</p>
+        <p className={s.card__title}>{name}</p>
         <div className={s.card__estimation}>
           <p className={s.card__p}>{duration}min •</p>
           <img src={star} alt="img" className={s.card__star} />

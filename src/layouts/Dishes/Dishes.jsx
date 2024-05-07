@@ -31,18 +31,22 @@ export const Dishes = () => {
   };
 
   return (
-    <section className={s.Dishes}>
-      <Container>
-        <div className={s.Dishes__content}>
-          <div className={s.Dishes__top}>
-            <h2 className={s.Dishes__title}>
-              Our Top <span className={s.Dishes__span}>Dishes</span>
+    <section className={s.dishes}>
+      <Container className={s.dishes__container}>
+        <div className={s.dishes__content}>
+          <div className={s.dishes__top}>
+            <h2 className={s.dishes__title}>
+              Our Top <span className={s.dishes__span}>Dishes</span>
             </h2>
-            <a href="##!" className={s.Dishes__link} onClick={toggleViewAll}>
+            <button
+              href="##!"
+              className={s.dishes__link}
+              onClick={toggleViewAll}
+            >
               View All <img src={vector} alt="img" />
-            </a>
+            </button>
           </div>
-          <div className={s.Dishes__cards}>
+          <div className={s.dishes__cards}>
             {data.map((el, i) => {
               const { dollars, cents } = formatPrice(el.price);
               if (viewAll || i < 5) {
@@ -51,7 +55,7 @@ export const Dishes = () => {
                     key={el.id}
                     image={el.image}
                     type={el.type}
-                    name={el.names}
+                    name={el.name}
                     duration={el.duration}
                     rating={el.rating}
                     dollars={dollars}
