@@ -1,4 +1,5 @@
 import "../app/styles/style.css";
+import { BlogPageArt } from "../pages/BlogPageArt/BlogPageArt";
 import { Contacts } from "../pages/Contacts/Contacts";
 import { BlogPage } from "../pages/BlogPage/BlogPage";
 import { Home } from "../pages/Home/Home";
@@ -12,6 +13,7 @@ export default function App() {
       <Route element={<SignUpPage />} path={"/signup"}></Route>
       <Route element={<Contacts />} path={"/contacts"}></Route>
       <Route element={<BlogPage/>} path={"/blog"}></Route>
+      <Route element={<BlogPageArt/>} path={'/blog/:id'}></Route>
     </Routes>
   );
 }

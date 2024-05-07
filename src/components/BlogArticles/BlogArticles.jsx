@@ -1,21 +1,27 @@
 import { useState } from 'react'
 import s from './BlogArticles.module.scss'
 import { articles } from './articles.js'
+import { Link } from 'react-router-dom';
 
 
 export const BlogArticles = () => {
  const [currentPage, setCurrentPage] = useState(0);
  let elPage = 6
  let pagesNumber = articles.length / elPage;
+ const [colorChange, setColorChange] = useState(false);
+ 
 
  const HandleClickNext = () => {
      if (currentPage < pagesNumber - 1) {
        setCurrentPage(currentPage+1);
+       setColorChange(true);
+       
      }
  }
  const HandleClickPrev = () => {
     if (currentPage > 0) {
       setCurrentPage(currentPage - 1);
+      setColorChange(false);
     }
  }
 
@@ -25,7 +31,7 @@ export const BlogArticles = () => {
  <div className={s.cards}>
      {data.map((art) => { 
          return (
-             <article key={art.id} className={s.card}>
+            <Link to={`/blog/${art.id}`}> <article key={art.id} className={s.card}>
                  <div className={s.cardImg}>
                  <img src={art.image} alt="Article" />
                  </div>
@@ -45,13 +51,14 @@ export const BlogArticles = () => {
                  </div>
                  </div>
              </article>
-             
+             </Link>
          )
      })}
      
  </div>
      <div className={s.card__scrolls}>
-     <button onClick={HandleClickPrev} className={s.card__scroll_left}>⬅</button>
-     <button onClick={HandleClickNext} className={s.card__scroll_right}>⮕</button>
-     </div>
+     <button onClick={HandleClickPrev} className={`${s.card__scroll_left} ${colorChange ? s.newColorClasses : ''}`}>⬅</button>
+     <button onClick={HandleClickNext} className={`${s.card__scroll_right} ${colorChange ? s.newColorClass : ''}`}>⮕</button>
+    </div>
+     
 </section>}
