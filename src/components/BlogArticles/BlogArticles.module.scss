@@ -77,3 +77,9 @@
     justify-content: center;
     margin-top: 100px;
 }
+.newColorClass {
+    color: #8D8D8D;
+}
+.newColorClasses {
+    color: var(--Light-100, #000);
+}

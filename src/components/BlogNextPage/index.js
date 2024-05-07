@@ -1,0 +1,1 @@
+export {BlogNextPage} from './BlogNextPage'
