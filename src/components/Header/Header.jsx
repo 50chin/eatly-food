@@ -30,7 +30,7 @@ export const Header = () => {
                     <a href="">Pricing</a>
                   </li>
                   <li>
-                    <a href="">Contact</a>
+                    <Link to={"/contacts"}>Contact</Link>
                   </li>
                 </ul>
               </nav>

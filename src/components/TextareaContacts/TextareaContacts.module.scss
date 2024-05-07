@@ -1,0 +1,21 @@
+.textarea {
+  height: 345px;
+  width: 100%;
+  padding: 22.647px 35px 22.647px 27.177px;
+  border-radius: 18.118px;
+  border: 2px solid #6c5fbc;
+  background: #f9f9f9;
+  color: #6f6e6e;
+  font-family: Inter;
+  font-size: 18.118px;
+  font-weight: 600;
+  line-height: 27.177px;
+  margin-bottom: 30px;
+}
+.textarea::placeholder{
+    color: #b6b6b6;
+  font-family: Inter;
+  font-size: 18.118px;
+  font-weight: 600;
+  line-height: 27.177px;
+}
