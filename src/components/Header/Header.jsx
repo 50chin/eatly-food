@@ -19,16 +19,21 @@ export const Header = () => {
               </div>
               <nav className={s.Header__nav}>
                 <ul className={s.Header__ul}>
-                  <Link to={"/"}><li>
-                    <a href="">Menu</a>
-                  </li>
+                  <Link to={"/"}>
+                    <li>
+                      <a href="">Menu</a>
+                    </li>
                   </Link>
-                  <Link to={"/blog"}><li>
-                    <a href="blog">Blog</a>
-                  </li></Link>
-                  <li>
-                    <a href="">Pricing</a>
-                  </li>
+                  <Link to={"/blog"}>
+                    <li>
+                      <a href="blog">Blog</a>
+                    </li>
+                  </Link>
+                  <Link to={"/pricing"}>
+                    <li>
+                      <a href="pricing">Pricing</a>
+                    </li>
+                  </Link>
                   <li>
                     <a href="">Contact</a>
                   </li>
