@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArticleDishes } from '../../components/ArticleDishes/ArticleDishes';
 import s from './Dishes.module.scss';
 import { Container } from '../Container/Container';
-import vector from '../../components/ArticleDishes/img/Vector.svg';
+import vector from '../../assets/icons/Hero/Vector1.png';
 const API = 'http://localhost:7777/dishes';
 
 export const Dishes = () => {

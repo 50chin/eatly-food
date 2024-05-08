@@ -45,13 +45,16 @@ export const Footer = () => {
                           <a href="">Blog</a>
                         </li>
                       </Link>
-
-                      <li>
-                        <a href="">Pricing</a>
-                      </li>
-                      <li>
-                        <a href="">Contact</a>
-                      </li>
+                      <Link to={'/pricing'}>
+                        <li className={s.header__list}>
+                          <a href="pricing">Pricing</a>
+                        </li>
+                      </Link>
+                      <Link to={'/contacts'}>
+                        <li className={s.header__list}>
+                          <a href="">Contact</a>
+                        </li>
+                      </Link>
                     </ul>
                   </nav>
                 </div>
