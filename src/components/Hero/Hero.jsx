@@ -1,13 +1,13 @@
-import s from "./Hero.module.scss";
-import logoHero from "../../assets/img/Hero/logoHero.webp";
-import starsHero from "../../assets/img/Hero/starsHero.webp";
-import foodHero from "../../assets/img/Hero/foodHero.webp";
-import arrow from "../../assets/icons/Hero/arrow.svg";
-import lines from "../../assets/icons/Hero/lines.svg";
-import lines2 from "../../assets/icons/Hero/lines2.svg";
-import vector from "../../assets/icons/Hero/vector.svg";
-import { Container } from "../../layouts/Container/Container";
-import { Button } from "../../ui/Button/Button";
+import s from './Hero.module.scss';
+import logoHero from '../../assets/img/Hero/logoHero.webp';
+import starsHero from '../../assets/img/Hero/starsHero.webp';
+import foodHero from '../../assets/img/Hero/foodHero.webp';
+import arrow from '../../assets/icons/Hero/arrow.svg';
+import lines from '../../assets/icons/Hero/lines.svg';
+import lines2 from '../../assets/icons/Hero/lines2.svg';
+import vector from '../../assets/icons/Hero/vector.svg';
+import { Container } from '../../layouts/Container/Container';
+import { Button } from '../../ui/Button/Button';
 
 export const Hero = () => {
   return (
@@ -29,7 +29,7 @@ export const Hero = () => {
               early. Get a <span className={s.hero__spanSecond}>$20 bonus</span>
             </p>
             <div className={s.hero__buttons}>
-              <Button variant="fill" size="small" border="true">
+              <Button variant="fill" size="small">
                 Get Started
               </Button>
               <Button variant="empty" size="small" border="true">
@@ -82,7 +82,6 @@ export const Hero = () => {
                 <p>6D</p>
                 <p>7D</p>
               </div>
-              <img className={s.hero__lines} src={lines} alt="line" />
             </div>
           </div>
         </div>

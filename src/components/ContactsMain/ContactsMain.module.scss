@@ -1,0 +1,39 @@
+.allcontent {
+  margin-bottom: 210px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  position: relative;
+  width: max-content;
+}
+.screen {
+  position: absolute;
+  right: -150px;
+  bottom: -70px;
+}
+.right {
+  padding: 0 93px 0 93px;
+  h1 {
+    color: #252525;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55.405px;
+    margin-bottom: 60px;
+  }
+  .span {
+    color: #6c5fbc;
+  }
+}
+.form {
+  width: 493px;
+}
+.button {
+  height: 75px;
+  width: 100%;
+}
+// .inputtext {
+//   height: 345px !important;
+// }

@@ -1,49 +1,58 @@
 .card {
+  padding: 26px 18px 29px;
   width: min(225px, 100%);
-  height: 390px;
   border-radius: 35px;
   border: 1px solid #f4f4f6;
   background: #fff;
   box-shadow: 7px 82px 41px 0px rgba(229, 229, 229, 0.7);
-  margin: 0 30px 0 0;
+  margin: 30px 0 0;
   cursor: pointer;
   font-family: Manrope, sans-serif;
+  transition: 0.5s ease;
   &:hover {
-    transition: 0.5s ease;
-    transform: translateY(-10px);
+    transform: scale(1.02);
+    box-shadow: 7px 40px 41px 0px rgba(196, 195, 195, 0.7);
   }
+
   &__content {
-    padding: 26px 17px 5px;
+    display: flex;
+    flex-direction: column;
   }
   &__images {
-    width: min(202px, 100%);
-    height: min(202px, 100%);
+    width: 184px;
+    height: 202px;
     position: relative;
+    margin-bottom: 5px;
   }
   &__img {
-    object-fit: cover;
+    object-fit: contain;
+    width: min(185px, 100%);
+    height: min(185px, 100%);
+    border-radius: 100px;
   }
   &__heart {
     position: absolute;
-    inset-inline-end: -6px;
+    inset-inline-end: -15px;
     inset-block-start: 5px;
   }
   &__title {
     color: #323142;
-    font-family: Poppins, sans-serif;
-    font-size: 23px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 37px;
+    line-height: 26px;
   }
   &__estimation {
+    margin-top: 1px;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   &__p {
-    color: var(--Grey, #8e97a6);
-    font-size: 17px;
-    line-height: 23px;
+    color: #8e97a6;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
   }
   &__star {
     margin: 0 5px;
@@ -52,12 +61,32 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 13px;
+    margin-top: 9px;
   }
   &__ceil {
     color: #323142;
     font-size: 26px;
     font-weight: 700;
     line-height: 40px;
+  }
+  &__btn {
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: auto;
+    background-color: #47464e;
+
+    &_decr {
+      color: #323142;
+      background-color: #fff;
+      border: 1px inset #323142;
+      margin-left: 8px;
+    }
+  }
+  &__count {
+    color: #323142;
+    font-size: 17px;
+    line-height: 140%;
+    padding: 5px;
   }
 }

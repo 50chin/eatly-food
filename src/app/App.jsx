@@ -1,4 +1,6 @@
 import "../app/styles/style.css";
+import { BlogPageArt } from "../pages/BlogPageArt/BlogPageArt";
+import { Contacts } from "../pages/Contacts/Contacts";
 import { BlogPage } from "../pages/BlogPage/BlogPage";
 import { Pricing } from "../pages/Pricing/Pricing";
 import { Home } from "../pages/Home/Home";
@@ -10,8 +12,14 @@ export default function App() {
     <Routes>
       <Route element={<Home />} path={"/"}></Route>
       <Route element={<SignUpPage />} path={"/signup"}></Route>
+<<<<<<< HEAD
       <Route element={<BlogPage />} path={"/blog"}></Route>
       <Route element={<Pricing />} path={"/pricing"} />
+=======
+      <Route element={<Contacts />} path={"/contacts"}></Route>
+      <Route element={<BlogPage/>} path={"/blog"}></Route>
+      <Route element={<BlogPageArt/>} path={'/blog/:id'}></Route>
+>>>>>>> main
     </Routes>
   );
 }
