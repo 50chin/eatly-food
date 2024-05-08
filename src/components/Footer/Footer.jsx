@@ -1,16 +1,16 @@
-import s from './Footer.module.scss';
-import img from '../Footer/img/Logo.svg';
-import { Container } from '../../layouts/Container/Container';
-import inst from './img/inst.png';
-import inn from './img/in.png';
-import facebook from './img/facebook.png';
-import twitter from './img/twitter.png';
-import { Link } from 'react-router-dom';
+import s from "./Footer.module.scss";
+import img from "../Footer/img/Logo.svg";
+import { Container } from "../../layouts/Container/Container";
+import inst from "./img/inst.png";
+import inn from "./img/in.png";
+import facebook from "./img/facebook.png";
+import twitter from "./img/twitter.png";
+import { Link } from "react-router-dom";
 
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 };
 
@@ -25,7 +25,7 @@ export const Footer = () => {
                 <div className={s.footer__top}>
                   <div className={s.footer__left}>
                     <div className={s.footer__image}>
-                      <Link to={'/'} onClick={() => scrollToTop()}>
+                      <Link to={"/"} onClick={() => scrollToTop()}>
                         <a href="#">
                           <img src={img} alt="img" className={s.footer__logo} />
                         </a>
@@ -35,22 +35,22 @@ export const Footer = () => {
                   </div>
                   <nav className={s.footer__nav}>
                     <ul className={s.footer__navigation}>
-                      <Link to={'/'}>
+                      <Link to={"/"} onClick={() => scrollToTop()}>
                         <li>
                           <a href="">Menu</a>
                         </li>
                       </Link>
-                      <Link to={'/blog'}>
+                      <Link to={"/blog"} onClick={() => scrollToTop()}>
                         <li>
                           <a href="">Blog</a>
                         </li>
                       </Link>
-                      <Link to={'/pricing'}>
+                      <Link to={"/pricing"} onClick={() => scrollToTop()}>
                         <li className={s.header__list}>
                           <a href="pricing">Pricing</a>
                         </li>
                       </Link>
-                      <Link to={'/contacts'}>
+                      <Link to={"/contacts"} onClick={() => scrollToTop()}>
                         <li className={s.header__list}>
                           <a href="">Contact</a>
                         </li>
