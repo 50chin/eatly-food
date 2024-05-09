@@ -63,7 +63,9 @@ export const MenuHeroSection = () => {
                             <Button />
                         </div>
                     </div>
-                    <div className={s.menu__right}></div>
+                    <div className={s.menu__right}>
+                        
+                    </div>
                 </div>
             </Container>
         </section>
