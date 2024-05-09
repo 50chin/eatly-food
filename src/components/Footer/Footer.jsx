@@ -26,9 +26,7 @@ export const Footer = () => {
                   <div className={s.footer__left}>
                     <div className={s.footer__image}>
                       <Link to={"/"} onClick={() => scrollToTop()}>
-                        <a href="#">
-                          <img src={img} alt="img" className={s.footer__logo} />
-                        </a>
+                        <img src={img} alt="img" className={s.footer__logo} />
                       </Link>
                     </div>
                     <p className={s.footer__title}>eatly</p>
@@ -36,24 +34,16 @@ export const Footer = () => {
                   <nav className={s.footer__nav}>
                     <ul className={s.footer__navigation}>
                       <Link to={"/"} onClick={() => scrollToTop()}>
-                        <li>
-                          <a href="">Menu</a>
-                        </li>
+                        <li>Menu</li>
                       </Link>
                       <Link to={"/blog"} onClick={() => scrollToTop()}>
-                        <li>
-                          <a href="">Blog</a>
-                        </li>
+                        <li>Blog</li>
                       </Link>
                       <Link to={"/pricing"} onClick={() => scrollToTop()}>
-                        <li className={s.header__list}>
-                          <a href="pricing">Pricing</a>
-                        </li>
+                        <li className={s.header__list}>Pricing</li>
                       </Link>
                       <Link to={"/contacts"} onClick={() => scrollToTop()}>
-                        <li className={s.header__list}>
-                          <a href="">Contact</a>
-                        </li>
+                        <li className={s.header__list}>Contact</li>
                       </Link>
                     </ul>
                   </nav>
