@@ -10,11 +10,11 @@ export const BlogPage = () => {
     <>
       <Layout>
         <section className={s.blog}>
-          <Container>
-            <Subscribe />
-            <BlogArticles />
-            <BlogQuestion />
-          </Container>
+        <Container>
+          <Subscribe />
+          <BlogArticles />
+          <BlogQuestion />
+        </Container>
         </section>
       </Layout>
     </>

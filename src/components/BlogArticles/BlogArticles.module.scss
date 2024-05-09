@@ -7,7 +7,6 @@
     background: #F9F9F9;
 }
 
-
 .card {
     width: 348px;
     height: 440px;
@@ -82,4 +81,51 @@
 }
 .newColorClasses {
     color: var(--Light-100, #000);
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 0.4fr);
+    }
+    .card {
+        width: 239px;
+        height: 302px;
+        box-shadow: 0px 3.905px 46.864px 0px rgba(197, 197, 197, 0.25);
+        border-radius: 24px;
+        padding: 10px 10px 0px 10px;
+    }
+    .cardImage {
+        width: 220px;
+        height: 187px;
+    }
+    .cartName {
+        font-size: 14px;
+    }
+    .cardUser {
+        margin-top: 10px;
+        align-items: center;
+    }
+    .img__user {
+        width: 30px;
+        height: 30px;
+    }
+    .cartUserCreate { 
+        font-size: 8px;
+    }
+    .cartUser {
+        font-size: 11px;
+        line-height: 17px
+    }
+    .cartData {
+        font-size: 8px;
+        line-height: 21px;
+    }
+    .section__title {
+        font-size: 25px;
+    }
+}
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(1, 0.4fr);
+    }
 }

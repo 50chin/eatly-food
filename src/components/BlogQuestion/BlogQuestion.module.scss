@@ -7,7 +7,8 @@
   align-items: center;
 }
 .questions {
-  margin-top: 90px;
+    margin-top: 90px;
+    
 }
 .btn__quest {
   background: #6c5fbc;
@@ -35,6 +36,44 @@
   margin-bottom: 60px;
 }
 .span {
-  color: #6c5fbc;
-  display: block;
+    color: #6C5FBC;
+    display: block;
+}
+
+@media (max-width: 375px) {
+    .quest__quest {
+        font-size: 12.301px;
+        line-height: 31.119px
+    }
+    .section__title {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+        color: #323142;
+    }
+}
+@media (max-width: 425px) {
+    .quest__quest {
+        font-size: 12.301px;
+        line-height: 31.119px
+    }
+    .section__title {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+        color: #323142;
+
+    }
+}
+@media (max-width: 768px) {
+    .quest__quest {
+        font-size: 12.301px;
+        line-height: 31.119px
+    }
+    .section__title {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+        color: #323142;
+    }
 }

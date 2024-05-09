@@ -33,14 +33,14 @@ export const BlogArticles = () => {
          return (
             <Link to={`/blog/${art.id}`}> <article key={art.id} className={s.card}>
                  <div className={s.cardImg}>
-                 <img src={art.image} alt="Article" />
+                 <img className={s.cardImage} src={art.image} alt="Article" />
                  </div>
                  <div className={s.cardName}>
                  <p className={s.cartName}>{art.name}</p>
                  </div>
                  <div className={s.cardUser}>
                  <div className={s.cardUserAvatar}>
-                     <img src={art.avatar} alt="Avatar" />
+                     <img className={s.img__user} src={art.avatar} alt="Avatar" />
                  </div>
                  <div className={s.cardUserCreate}>
                      <p className={s.cartUserCreate}>{art.whoCreate}</p>
