@@ -1,0 +1,138 @@
+.order {
+    position: relative;
+    width: min(681px, 100% );
+    margin-top: 300px;
+    margin-inline: auto ;
+    &__content{
+    
+    }
+    &__cards{
+        display: grid;
+        place-items: center;
+    }
+    &__result{
+    }
+    &__form{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin: 90px 0 51px; 
+        position: relative;   
+    }
+    &__inputs{
+    }
+    &__span{
+        background-image: url("../../assets//img//OrderCard/icon.svg");
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 29px;
+        position: absolute;
+        left: 20px;
+        top: 28px;
+    }
+    &__input{
+        width: min(541px, 100%);
+        background-color: #F1F1F1;
+        color:#C2C3CB;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 117.5%; 
+        letter-spacing: -0.36px;
+        padding: 25px 64px;
+        border: none;
+        &::placeholder{
+            color:#C2C3CB;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 117.5%;
+        }
+    }
+    &__btn{
+        padding: 25px 40px;
+    }
+    &__position{
+        color: #323142;
+        font-family: Poppins;
+        font-size: 20px;
+        line-height: 117.5%; 
+        letter-spacing: -0.4px;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__subtotal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 7px;
+    }
+    &__name{
+
+    }
+    &__price{
+
+    }
+    &__hr{
+        
+    }
+    &__total{
+        color:#323142;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 117.5%; 
+        letter-spacing: -0.5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 28px;
+    }
+    &__item{
+
+    }
+}
+.btn{
+    padding: 24px 241px;
+    width: 100%;
+    color: #FFF3EB;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    margin-top: 42px;
+    position: relative;
+    &::before{
+        content: '';
+        width: 120px;
+        height: 120px;
+        background-image: url("../../assets//img//OrderCard/Arrow1.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -120px;
+        top: -55px;
+    }
+    &::after{
+        content: '';
+        width: 120px;
+        height: 120px;
+        background-image: url("../../assets//img//OrderCard/Arrow2.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -116px;
+        top: -55px;
+    }
+}
+
+.order__cards::after{
+    content: "";
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    right: -35px;
+    inset-block-start: -40px;
+    background-image: url("../../assets/img/OrderCard/Illlustration.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

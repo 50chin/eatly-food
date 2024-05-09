@@ -5,6 +5,7 @@ import { BlogPage } from "../pages/BlogPage/BlogPage";
 import { Home } from "../pages/Home/Home";
 import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
 import { Route, Routes } from "react-router-dom";
+import { Basket } from "../pages/Basket/Basket";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
       <Route element={<SignUpPage />} path={"/signup"}></Route>
       <Route element={<Contacts />} path={"/contacts"}></Route>
       <Route element={<BlogPage/>} path={"/blog"}></Route>
-      <Route element={<BlogPageArt/>} path={'/blog/:id'}></Route>
+      <Route element={<Basket/>} path={"/basket"}></Route>
     </Routes>
   );
 }
