@@ -12,16 +12,16 @@ import { Subscribe } from "../../components/Subscribe/Subscribe";
 export const Home = () => {
   return (
     <>
-      <Layout>
+      {/* <Layout> */}
         <Hero></Hero>
-        <Statistics></Statistics>
+        {/* <Statistics></Statistics>
         <MobileApp></MobileApp>
         <Restaurants />
         <Dishes />
         <Purchases />
         <Customer />
-        <Subscribe />
-      </Layout>
+        <Subscribe /> */}
+      {/* </Layout> */}
     </>
   );
 };
