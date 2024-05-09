@@ -1,13 +1,11 @@
-import s from './Hero.module.scss';
-import logoHero from '../../assets/img/Hero/logoHero.webp';
-import starsHero from '../../assets/img/Hero/starsHero.webp';
-import foodHero from '../../assets/img/Hero/foodHero.webp';
-import arrow from '../../assets/icons/Hero/arrow.svg';
-import lines from '../../assets/icons/Hero/lines.svg';
-import lines2 from '../../assets/icons/Hero/lines2.svg';
-import vector from '../../assets/icons/Hero/vector.svg';
-import { Container } from '../../layouts/Container/Container';
-import { Button } from '../../ui/Button/Button';
+import s from "./Hero.module.scss";
+import logoHero from "../../assets/img/Hero/logoHero.webp";
+import starsHero from "../../assets/img/Hero/starsHero.webp";
+import HeroImage from "../../assets/img/Hero/HeroImage.png";
+import arrow from "../../assets/icons/Hero/arrow.svg";
+import vector from "../../assets/icons/Hero/vector.svg";
+import { Container } from "../../layouts/Container/Container";
+import { Button } from "../../ui/Button/Button";
 
 export const Hero = () => {
   return (
@@ -43,46 +41,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className={s.hero__image}>
-            <img className={s.hero__food} src={foodHero} alt="chicken" />
-            <div className={s.hero__foodMini}>
-              <img className={s.hero__arrow} src={arrow} alt="arrow" />
-              <img
-                className={s.hero__foodMini__image}
-                src={foodHero}
-                alt="chicken"
-              />
-              <div className={s.hero__foodMini__text}>
-                <p className={s.hero__foodMini__title}>Chicken Hell</p>
-                <p className={s.hero__foodMini__descr}>On The Way</p>
-              </div>
-              <time className={s.hero__foodMini__time}>3:09 PM</time>
-              <img className={s.hero__lines2} src={lines2} alt="line" />
-            </div>
-            <div className={s.hero__graph}>
-              <div className={s.hero__times}>
-                <span className={s.hero__timesSpan}>
-                  <p>Main</p>
-                </span>
-                <p>Weekly</p>
-                <p>Montly</p>
-                <p>Yearly</p>
-              </div>
-              <img className={s.hero__vector} src={vector} alt="vector" />
-              <div className={s.hero__ellips}></div>
-              <p className={s.hero__graph__money}>$409</p>
-              <div className={s.hero__graph__hr}>
-                <hr />
-              </div>
-              <div className={s.hero__dimensional}>
-                <span className={s.hero__dimensionalSpan}>
-                  <p>2D</p>
-                </span>
-                <p>4D</p>
-                <p>5D</p>
-                <p>6D</p>
-                <p>7D</p>
-              </div>
-            </div>
+            <img src={HeroImage} alt="food" />
           </div>
         </div>
       </Container>

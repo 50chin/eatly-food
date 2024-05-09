@@ -16,6 +16,7 @@ export const Button = ({
         [s.button_empty]: variant === "empty", // пустой
         [s.button_border]: border === "true", // есть бордер
         [s.button_radiusLeft]: radius === "radiusLeft", // радиус left
+        [s.button_radiusRight]: radius === 'radiusRight', // радиус right
         [s.button_small]: size === "small", // кнопка маленькая
         [s.button_middle]: size === "middle", // кнопка средняя
         [s.button_large]: size === "large", // кнопка большая

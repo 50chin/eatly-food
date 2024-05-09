@@ -1,33 +1,33 @@
-import { Container } from '../Container/Container';
-import s from './Purchases.module.scss';
-import img1 from '../../assets/img/purchases/1.png';
-import img2 from '../../assets/img/purchases/2.png';
-import img3 from '../../assets/img/purchases/3.png';
-import iconWallet from '../../assets/icons/Hero/wallet.svg';
-import iconMoney from '../../assets/icons/Hero/money.svg';
-import linePurple from '../../assets/icons/Hero/divider-purple.svg';
-import lineYellow from '../../assets/icons/Hero/divider-yellow.svg';
+import { Container } from "../Container/Container";
+import s from "./Purchases.module.scss";
+import img1 from "../../assets/img/purchases/1.png";
+import img2 from "../../assets/img/purchases/2.png";
+import img3 from "../../assets/img/purchases/3.png";
+import iconWallet from "../../assets/icons/Hero/wallet.svg";
+import iconMoney from "../../assets/icons/Hero/money.svg";
+import linePurple from "../../assets/icons/Hero/divider-purple.svg";
+import lineYellow from "../../assets/icons/Hero/divider-yellow.svg";
 
-import { PurchasesCards } from '../../components/PurchasesCards/PurchasesCards';
+import { PurchasesCards } from "../../components/PurchasesCards/PurchasesCards";
 
 const cards = [
   {
     img: img1,
-    name: 'Chicken Hell',
-    status: 'On The Way',
-    time: '3:09 PM',
+    name: "Chicken Hell",
+    status: "On The Way",
+    time: "3:09 PM",
   },
   {
     img: img2,
-    name: 'Swe Dish',
-    status: 'Delivered',
-    time: 'Yesterday',
+    name: "Swe Dish",
+    status: "Delivered",
+    time: "Yesterday",
   },
   {
     img: img3,
-    name: 'Fish Hell Veg',
-    status: 'Cancelled',
-    time: 'Yesterday',
+    name: "Fish Hell Veg",
+    status: "Cancelled",
+    time: "Yesterday",
   },
 ];
 

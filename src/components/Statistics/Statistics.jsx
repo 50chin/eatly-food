@@ -1,5 +1,4 @@
 import s from "./Statistics.module.scss";
-import bg from "../../assets/img/statistics/statistic-bg.jpg";
 import clsx from "clsx";
 
 export const Statistics = () => {
