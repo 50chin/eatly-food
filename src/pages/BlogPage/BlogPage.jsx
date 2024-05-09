@@ -9,11 +9,13 @@ export const BlogPage = () => {
   return (
     <>
       <Layout>
+        <section className={s.blog}>
         <Container>
           <Subscribe />
           <BlogArticles />
           <BlogQuestion />
         </Container>
+        </section>
       </Layout>
     </>
   );

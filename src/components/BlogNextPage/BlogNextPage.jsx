@@ -41,12 +41,14 @@ const BlogNextPage = () => {
                      <p className={s.cartUser}>{article?.user}</p>
                  </div>
         </div>
+        <hr />
       <img className={s.article__image} src={article?.image} alt="#" />
         <div className={s.descs__info}>
             <div className={s.desc__left}>
                 <h3>{article?.subtitle}</h3>
                 <p className={s.p__desc}>{article?.desc}</p>
-                <h3>{article?.secondSubtitle}</h3>
+                <img className={s.article__image_second} src={article?.image} alt="#" />
+                <h3 className={s.subTitle}>{article?.secondSubtitle}</h3>
                 <p className={s.p__desc}>{article?.descSecond}</p>
                 <h3>{article?.thirdSubtitle}</h3>
                 <p className={s.p__desc}>{article?.descThird}</p>
