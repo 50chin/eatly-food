@@ -31,12 +31,16 @@ export const Header = () => {
                   <a href="blog">Blog</a>
                 </li>
               </Link>
-              <li className={s.header__list}>
-                <a href="">Pricing</a>
-              </li>
-              <li className={s.header__list}>
-                <a href="">Contact</a>
-              </li>
+              <Link to={'/pricing'}>
+                <li className={s.header__list}>
+                  <a href="pricing">Pricing</a>
+                </li>
+              </Link>
+              <Link to={'/contacts'}>
+                <li className={s.header__list}>
+                  <a href="">Contact</a>
+                </li>
+              </Link>
             </ul>
           </nav>
           <div className={s.header__right}>

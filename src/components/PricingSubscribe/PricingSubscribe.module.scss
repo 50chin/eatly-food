@@ -1,0 +1,111 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  margin-top: 600px;
+  &Subscribe {
+    box-shadow: 0px 0px 90px 0px rgba($color: #696874, $alpha: 0.3);
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    &__buttons {
+      padding: 45px 70px 55px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 228px;
+    }
+    &__title {
+      border-bottom: #cbcbcb 1px solid;
+      padding: 51px 65px 37px;
+      display: grid;
+      grid-template-columns: 632px 373px 250px;
+    }
+    &__pricing {
+      padding: 40px 65px;
+      display: grid;
+      justify-content: end;
+      grid-template-columns: 370px 142px;
+      text-align: right;
+      margin-left: 100px;
+    }
+    &__price {
+      display: flex;
+      color: #272e35;
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 72px;
+    }
+    &__column {
+      display: flex;
+      flex-direction: column;
+    }
+    &__features {
+      padding: 50px 65px 64px;
+      border-bottom: #cbcbcb 1px solid;
+      border-top: #cbcbcb 1px solid;
+      h3 {
+        color: #272e35;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 133%;
+      }
+      p {
+        color: #606060;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 145%;
+      }
+      gap: 46px;
+      display: flex;
+      flex-direction: column;
+      &Title {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
+    }
+  }
+}
+.coreFeatures {
+  display: grid;
+  grid-template-columns: 642px 373px 250px;
+}
+.title__descr {
+  h3 {
+    color: #282828;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+  p {
+    color: #6e757c;
+    font-family: "Inter";
+    font-size: 16px;
+    max-width: 158px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.span {
+  &__price {
+    color: #272e35;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  &__month {
+    display: flex;
+    align-items: end;
+    margin-bottom: 10px;
+    color: #6e757c;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
