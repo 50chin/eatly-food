@@ -42,3 +42,79 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .customer {
+    &__review {
+      margin: 0 auto;
+      max-width: 520px;
+    }
+    &__reviews {
+      &Scroll {
+        width: 520px;
+        article {
+          max-width: 390px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 995px) {
+  .customer {
+    // &review {
+    //   margin: 0 auto;
+    // }
+    &__reviews {
+      &Scroll {
+        padding-bottom: 20px;
+        width: 530px;
+        margin: 0 auto;
+        article {
+          height: 300px;
+        }
+      }
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .customer {
+    &__reviews {
+      gap: 150px;
+      article {
+        font-size: 18px;
+        width: 370px;
+        height: 470px;
+      }
+      &Scroll {
+        width: 370px;
+        article {
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .customer {
+    h2 {
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+
+    &__reviews {
+      gap: 190px;
+      article {
+        width: 310px;
+        height: 510px;
+      }
+      &Scroll {
+        width: 310px;
+        article {
+          height: 370px;
+        }
+      }
+    }
+  }
+}
