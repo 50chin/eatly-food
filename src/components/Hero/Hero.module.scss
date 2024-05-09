@@ -80,7 +80,6 @@
   &__downloads {
     margin-top: 7px;
     color: #334155;
-    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
     height: 28px;
     font-weight: 500;
@@ -112,6 +111,7 @@
 }
 @media (max-width: 1050px) {
   .hero {
+    padding: 0;
     &__content {
       width: 90%;
       margin-top: 560px;
