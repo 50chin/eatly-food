@@ -1,145 +1,145 @@
 .article {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .article__title {
-    font-size: 37.401px;
-    font-weight: 600;   
-    line-height: 44.549px;
-    margin-bottom: 30px;
+  font-size: 37.401px;
+  font-weight: 600;
+  line-height: 44.549px;
+  margin-bottom: 30px;
 }
-.cardUser {
-    display: flex;
-    align-items: end;
-    gap: 10px;
-    margin-top: 25px;
-    margin-bottom: 60px;
+.card
+User {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
 .cartUserCreate {
-    color: #8D8D8D;
-    font-size: 11.771px;
-    font-weight: 400;
+  color: #8d8d8d;
+  font-size: 11.771px;
+  font-weight: 400;
 }
 .cardUserCreate {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .cartUser {
-    color: var(--Light-100, #000);
-    font-size: 17.021px;
-    font-weight: 500;
-    line-height: 26.099px
+  color: var(--Light-100, #000);
+  font-size: 17.021px;
+  font-weight: 500;
+  line-height: 26.099px;
 }
 .article__image {
-    max-width: 1276px;
-    width: 100%;
-    height: 403px;
-    object-fit:cover;
-    object-position:center;
+  max-width: 1276px;
+  width: 100%;
+  height: 403px;
+  object-fit: cover;
+  object-position: center;
 }
 .descs__info {
-    display: flex;
-    margin-top: 80px;
+  display: flex;
+  margin-top: 80px;
 }
 .desc__right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 40px;
 }
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 0.4fr);
-    justify-items: center;
-    grid-row-gap: 100px;
-    justify-content: center;
-    background: #F9F9F9;
-    background: var(--Black-Color, #323142);
-filter: blur(50.217288970947266px);
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  justify-items: center;
+  grid-row-gap: 100px;
+  justify-content: center;
+  background: #f9f9f9;
+  background: var(--Black-Color, #323142);
+  filter: blur(50.217288970947266px);
 }
-
 
 .card {
-    width: 348px;
-    height: 440px;
-    box-shadow: 0px 3.338px 40.057px 0px rgba(197, 197, 197, 0.25);
-    border-radius: 24px;
-    padding: 20px 20px 0px 20px;
+  width: 348px;
+  height: 440px;
+  box-shadow: 0px 3.338px 40.057px 0px rgba(197, 197, 197, 0.25);
+  border-radius: 24px;
+  padding: 20px 20px 0px 20px;
 }
 .cardUser {
-    display: flex;
-    align-items: end;
-    gap: 10px;
-    margin-top: 25px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin-top: 25px;
 }
 .cardUserData {
-    margin-left: 60px;
+  margin-left: 60px;
 }
 .cardName {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .section__title {
-    text-align: center;
-    font-size: 45px;
-    font-weight: 600;
-    color: #323142;
-    margin-bottom: 60px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  color: #323142;
+  margin-bottom: 60px;
 }
 .span {
-    color: #6C5FBC;
+  color: #6c5fbc;
 }
 .cartName {
-    color: #252525;
-    font-size: 21.14px;
-    font-weight: 600;
-    line-height: 25.18px;
+  color: #252525;
+  font-size: 21.14px;
+  font-weight: 600;
+  line-height: 25.18px;
 }
 .cartUserCreate {
-    color: #8D8D8D;
-    font-size: 11.771px;
-    font-weight: 400;
+  color: #8d8d8d;
+  font-size: 11.771px;
+  font-weight: 400;
 }
 .cardUserCreate {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .cartUser {
-    color: var(--Light-100, #000);
-    font-size: 17.021px;
-    font-weight: 500;
-    line-height: 26.099px
+  color: var(--Light-100, #000);
+  font-size: 17.021px;
+  font-weight: 500;
+  line-height: 26.099px;
 }
 .cartData {
-    color: #B7B4B4;
-    font-size: 15.855px;
+  color: #b7b4b4;
+  font-size: 15.855px;
 }
 .card__scroll_right {
-    width: 55px;
-    font-size: 50px;
+  width: 55px;
+  font-size: 50px;
 }
 .card__scroll_left {
-    font-size: 50px;
-    width: 55px;
-    color:#8D8D8D;
+  font-size: 50px;
+  width: 55px;
+  color: #8d8d8d;
 }
 .card__scrolls {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
 }
 h3 {
-    font-size: 33px;
-    font-weight: 600;
-    line-height: 44.549px;
-    text-transform: capitalize;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 44.549px;
+  text-transform: capitalize;
 }
 .p__desc {
-    font-size: 22px;
-    font-weight: 400;
-    text-align: justify;
-    line-height: 44.549px;
-    margin-top: 35px;
-    margin-bottom: 90px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 44.549px;
+  margin-top: 35px;
+  margin-bottom: 90px;
 }
 .my__hr {
     margin-left: 70px;

@@ -6,7 +6,7 @@ export const SignUpHeader = () => {
   return (
     <header className={s.header}>
       <Link to={"/"}>
-        <img src={imgLogo}></img>
+        <img src={imgLogo}/>
       </Link>
     </header>
   );
