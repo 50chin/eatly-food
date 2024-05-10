@@ -24,7 +24,7 @@ export const Header = () => {
           </div>
           <nav className={s.header__nav}>
             <ul className={s.header__lists}>
-              <Link to={"/"} onClick={() => useNavState("menu")}>
+              <Link to={"/menu"} onClick={() => useNavState("menu")}>
                 <li
                   className={s.header__list}
                   style={{
