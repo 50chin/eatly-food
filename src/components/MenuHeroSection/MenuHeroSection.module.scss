@@ -26,8 +26,71 @@
       background-color: #6c5fbc;
       height: 5px;
       width: 60px;
-      border-radius: 4px;
+      border-radius: 4px
+    &__input{
+        width: 757px;
+        height: 75px;
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        background: #EDEDED;
+        border-radius: 15px;
+        position: relative;
     }
+    &__sliderLines{
+        width: 136px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    &__sliderLine{
+        width: 30px;
+        height: 5px;
+        background-color: #DBD9EE;
+        border-radius: 4px;
+            &_purple{
+                background-color: #6C5FBC;
+                height: 5px;
+                width: 60px;
+                border-radius: 4px;
+            }
+    }
+    &__slider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image{
+        width: 758px;
+        height: 310px;
+    }
+    &__bar{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        padding: 25px 55px;
+        color: #AAABBA;
+        font-size: 20.544px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 117.5%; /* 24.139px */
+        letter-spacing: -0.411px;
+        border: none;
+        &:active, &:focus, &:hover{
+            border: none;
+            outline: none;
+            outline-offset: 0;
+        }
+    }
+    &__inputImage{
+        position: absolute;
+        margin-left: 10px;
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 35px;
+    }
+}
   }
   &__slider {
     display: flex;
@@ -41,3 +104,4 @@
     height: 308px;
   }
 }
+

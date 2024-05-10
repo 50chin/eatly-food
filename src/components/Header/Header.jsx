@@ -33,7 +33,7 @@ export const Header = () => {
                 >
                   Menu
                 </li>
-              </Link>
+                </Link>
               <Link to={"/blog"} onClick={() => useNavState("blog")}>
                 <li
                   className={s.header__list}

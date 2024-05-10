@@ -1,15 +1,21 @@
 import s from "./Restaurants.module.scss";
 import { Container } from "../Container/Container";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { RestaurantsCard } from "../../components/RestaurantsCard/RestaurantsCard";
 const API = "http://localhost:7777/restaurants";
 import img from "../../assets/icons/Hero/Vector1.png";
+import { InputContext } from "../../context/InputContext";
+
 
 export const Restaurants = () => {
   const [data, setData] = useState([]);
   const [view, setView] = useState(3);
   const [viewState, setViewState] = useState(false);
   const [buttonText, setButtonText] = useState("View All");
+  
+
+  const {inputValue, inputHandler} = useContext(InputContext);
+  
 
   useEffect(() => {
     const func = async () => {
@@ -33,6 +39,10 @@ export const Restaurants = () => {
     }
   }
 
+  const filterData = data.filter((el) =>
+      el.name.toLowerCase().includes(inputValue.toLowerCase().trim())
+  );
+
   return (
     <section className={s.section}>
       <Container className={s.section__container}>
@@ -41,7 +51,7 @@ export const Restaurants = () => {
             Our Top <span className={s.section__title_purple}>Restaurants</span>
           </h2>
           <div className={s.section__content}>
-            {data.map((el, i) => {
+            {filterData.map((el, i) => {
               if (i < view) {
                 return (
                   <RestaurantsCard

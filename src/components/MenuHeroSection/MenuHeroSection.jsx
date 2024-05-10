@@ -4,8 +4,10 @@ import s from "./MenuHeroSection.module.scss";
 import img from "../../assets/img/Menu/banner.png";
 import img2 from "../../assets/img/Menu/banner2.webp";
 import img3 from "../../assets/img/Menu/banner3.jpg";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import clsx from "clsx";
+import search from "../../assets/img/Menu/Search.svg";
+import { InputContext } from "../../context/InputContext";
 import { CategoryCard } from "../CategoryCard/CategoryCard";
 
 import iconPizza from "../../assets/icons/ui/pizza.svg";
@@ -25,9 +27,10 @@ const dataButtons = [
 ];
 
 export const MenuHeroSection = () => {
-  const sliderBase = [img, img2, img3];
-  const [slide, setSlide] = useState(sliderBase[0]);
-  const [classButton, setClassButton] = useState(0);
+    const sliderBase = [img, img2, img3];
+    const [slide, setSlide] = useState(sliderBase[0]);
+    const [classButton, setClassButton] = useState(0);
+    const { inputValue, inputHandler } = useContext(InputContext)
 
   const swapSlide = () => {
     let index = sliderBase.indexOf(slide);
@@ -52,35 +55,53 @@ export const MenuHeroSection = () => {
     setClassButton(Number(evt.target.id));
   };
 
-  return (
-    <section className={s.menu}>
-      <Container>
-        <div className={s.menu__content}>
-          <div className={s.menu__left}>
-            <div className={s.menu__slider}>
-              <img className={s.menu__image} src={slide} alt="" />
-              <div className={s.menu__sliderLines}>
-                {[...Array(3).keys()].map((i) => (
-                  <button
-                    key={i}
-                    onClick={buttonActive}
-                    id={i}
-                    className={clsx(s.button, {
-                      [s.menu__sliderLine_purple]: classButton == i,
-                      [s.menu__sliderLine]: classButton != i,
-                    })}
-                  ></button>
-                ))}
-              </div>
-            </div>
-            <div className={s.menu__search}>
-              <input className={s.menu__input} type="text" />
-              <Button />
-            </div>
-          </div>
-          <CategoryCard data={dataButtons} />
-        </div>
-      </Container>
-    </section>
-  );
+    return (
+        <section className={s.menu}>
+            <Container>
+                <div className={s.menu__content}>
+                    <div className={s.menu__left}>
+                        <div className={s.menu__slider}>
+                            <img className={s.menu__image} src={slide} alt="" />
+                            <div className={s.menu__sliderLines}>
+                                {[...Array(3).keys()].map((i) => (
+                                    <button
+                                        key={i}
+                                        onClick={buttonActive}
+                                        id={i}
+                                        className={clsx(s.button, {
+                                            [s.menu__sliderLine_purple]:
+                                                classButton == i,
+                                            [s.menu__sliderLine]:
+                                                classButton != i,
+                                        })}
+                                    ></button>
+                                ))}
+                            </div>
+                        </div>
+                        <div className={s.menu__search}>
+                            <label className={s.menu__input} htmlFor="">
+                                <img
+                                    className={s.menu__inputImage}
+                                    src={search}
+                                    alt=""
+                                />
+                                <input
+                                    value={inputValue}
+                                    onChange={inputHandler}
+                                    className={s.menu__bar}
+                                    type="text"
+                                    placeholder="Search"
+                                />
+                            </label>
+                            <div className={s.menu__buttons}>
+                                <Button radius="radiusLeft" size='large' variant='empty' border="true" >Food</Button>
+                                <Button radius='radiusRight' size='large' variant='fill' border='true' >Resturent</Button>
+                            </div>
+                        </div>
+                    </div>
+                     <CategoryCard data={dataButtons} />
+                </div>
+            </Container>
+        </section>
+    );
 };
