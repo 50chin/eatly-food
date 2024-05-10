@@ -2,6 +2,8 @@
   background: #f9f9f9;
   padding: 140px 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   &__buttons {
     margin-top: 53px;
     display: flex;
@@ -12,9 +14,6 @@
   }
   &__image {
     min-width: 200px;
-    position: absolute;
-    right: 60px;
-    top: 185px;
   }
   &__title {
     margin-top: 18px;
