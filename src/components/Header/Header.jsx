@@ -24,16 +24,11 @@ export const Header = () => {
           </div>
           <nav className={s.header__nav}>
             <ul className={s.header__lists}>
-              <Link to={"/"} onClick={() => useNavState("menu")}>
-                <li
-                  className={s.header__list}
-                  style={{
-                    color: navState === "menu" ? "#6C5FBC" : "#606060",
-                  }}
-                >
+              <Link to={'/Menu'}>
+                <li className={s.header__list}>
                   Menu
                 </li>
-              </Link>
+                </Link>
               <Link to={"/blog"} onClick={() => useNavState("blog")}>
                 <li
                   className={s.header__list}

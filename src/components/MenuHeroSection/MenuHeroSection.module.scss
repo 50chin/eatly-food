@@ -14,8 +14,12 @@
     &__input{
         width: 757px;
         height: 75px;
-        fill: #EDEDED;
         margin-top: 65px;
+        display: flex;
+        align-items: center;
+        background: #EDEDED;
+        border-radius: 15px;
+        position: relative;
     }
     &__sliderLines{
         width: 136px;
@@ -44,4 +48,31 @@
         width: 758px;
         height: 310px;
     }
+    &__bar{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        padding: 25px 55px;
+        color: #AAABBA;
+        font-size: 20.544px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 117.5%; /* 24.139px */
+        letter-spacing: -0.411px;
+        border: none;
+        &:active, &:focus, &:hover{
+            border: none;
+            outline: none;
+            outline-offset: 0;
+        }
+    }
+    &__inputImage{
+        position: absolute;
+        margin-left: 10px;
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 35px;
+    }
 }
+
