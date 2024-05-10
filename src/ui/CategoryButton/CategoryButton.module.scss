@@ -1,0 +1,25 @@
+.btn {
+  padding: 12px 0;
+  width: 66px;
+  height: 96px;
+  border-radius: 20px;
+  &_pizza {
+    background: rgba(255, 222, 138, 0.35);
+    color: #d69900;
+  }
+
+  &_asian {
+    background: rgba(247, 197, 186, 0.35);
+    color: #fb471d;
+  }
+
+  &_donate {
+    background: rgba(237, 182, 107, 0.35);
+    color: #e28b14;
+  }
+
+  &_ice {
+    background: rgba(90, 133, 255, 0.35);
+    color: #002073;
+  }
+}

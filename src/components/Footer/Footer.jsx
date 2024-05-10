@@ -33,7 +33,7 @@ export const Footer = () => {
                   </div>
                   <nav className={s.footer__nav}>
                     <ul className={s.footer__navigation}>
-                      <Link to={"/"} onClick={() => scrollToTop()}>
+                      <Link to={"/menu"} onClick={() => scrollToTop()}>
                         <li>Menu</li>
                       </Link>
                       <Link to={"/blog"} onClick={() => scrollToTop()}>

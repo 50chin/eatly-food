@@ -1,0 +1,62 @@
+.card {
+  padding: 32px 32px 39px;
+  width: 377px;
+  height: 591px;
+  border-radius: 23px;
+  background: #fff;
+  box-shadow: 5px 9px 28px 1px rgba(108, 95, 188, 0.12);
+
+  &__title {
+    margin-top: 30px;
+  }
+
+  &__btns {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  select {
+    color: #6c5fbc;
+    font-size: 15.448px;
+    font-weight: 500;
+    line-height: 28.89px;
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__title:first-child {
+    margin-top: 0;
+  }
+
+  &__title {
+    color: #323142;
+    font-size: 21.452px;
+    font-weight: 600;
+    line-height: 28.886px; /* 134.654% */
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    color: #acadb9;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28.89px;
+  }
+
+  &__line {
+    margin-top: 17px;
+  }
+
+  &__btn {
+    padding: 19px 136px;
+    margin-top: 60px;
+  }
+}
