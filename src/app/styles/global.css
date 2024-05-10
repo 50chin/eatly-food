@@ -28,3 +28,9 @@ button {
   cursor: pointer;
   transition: 0.4s;
 }
+
+select {
+  appearance: none;
+  border: none;
+  background: inherit;
+}

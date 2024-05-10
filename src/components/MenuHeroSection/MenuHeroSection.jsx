@@ -8,37 +8,52 @@ import { useContext, useEffect, useState } from "react";
 import clsx from "clsx";
 import search from "../../assets/img/Menu/Search.svg";
 import { InputContext } from "../../context/InputContext";
+import { CategoryCard } from "../CategoryCard/CategoryCard";
 
+import iconPizza from "../../assets/icons/ui/pizza.svg";
+import iconHotdog from "../../assets/icons/ui/hotdog.svg";
+import iconDonate from "../../assets/icons/ui/donate.svg";
+import iconIce from "../../assets/icons/ui/ice.svg";
+
+const dataButtons = [
+  {
+    id: 1,
+    icon: iconPizza,
+    name: "Pizza",
+  },
+  { id: 2, icon: iconHotdog, name: "Asian" },
+  { id: 3, icon: iconDonate, name: "Donate" },
+  { id: 4, icon: iconIce, name: "Ice" },
+];
 
 export const MenuHeroSection = () => {
     const sliderBase = [img, img2, img3];
     const [slide, setSlide] = useState(sliderBase[0]);
     const [classButton, setClassButton] = useState(0);
     const { inputValue, inputHandler } = useContext(InputContext)
-    
 
-    const swapSlide = () => {
-        let index = sliderBase.indexOf(slide);
-        if (index == 2) {
-            index = 0;
-            setSlide(sliderBase[index]);
-            setClassButton(index);
-        } else {
-            index += 1;
-            setSlide(sliderBase[index]);
-            setClassButton(index);
-        }
-    };
+  const swapSlide = () => {
+    let index = sliderBase.indexOf(slide);
+    if (index == 2) {
+      index = 0;
+      setSlide(sliderBase[index]);
+      setClassButton(index);
+    } else {
+      index += 1;
+      setSlide(sliderBase[index]);
+      setClassButton(index);
+    }
+  };
 
-    useEffect(() => {
-        const slideTimer = setInterval(swapSlide, 3000);
-        return () => clearInterval(slideTimer);
-    }, [slide]);
+  useEffect(() => {
+    const slideTimer = setInterval(swapSlide, 3000);
+    return () => clearInterval(slideTimer);
+  }, [slide]);
 
-    const buttonActive = (evt) => {
-        setSlide(sliderBase[evt.target.id]);
-        setClassButton(Number(evt.target.id));
-    };
+  const buttonActive = (evt) => {
+    setSlide(sliderBase[evt.target.id]);
+    setClassButton(Number(evt.target.id));
+  };
 
     return (
         <section className={s.menu}>
@@ -84,7 +99,7 @@ export const MenuHeroSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={s.menu__right}></div>
+                     <CategoryCard data={dataButtons} />
                 </div>
             </Container>
         </section>
